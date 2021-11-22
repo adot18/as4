@@ -1,0 +1,1026 @@
+Script started on 2021-11-22 01:12:02+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ wget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip (Links to an external site.) [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+--2021-11-22 01:12:12--  http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
+Resolving cs.stanford.edu (cs.stanford.edu)... 171.64.64.64
+Connecting to cs.stanford.edu (cs.stanford.edu)|171.64.64.64|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip [following]
+--2021-11-22 01:12:12--  https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
+Connecting to cs.stanford.edu (cs.stanford.edu)|171.64.64.64|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81363704 (78M) [application/zip]
+Saving to: ‘trainingandtestdata.zip’
+
+trainingandtestdata   0%[                    ]       0  --.-KB/s               trainingandtestdata   0%[                    ] 664.00K  3.21MB/s               trainingandtestdata   2%[                    ]   1.65M  4.09MB/s               trainingandtestdata   3%[                    ]   2.65M  4.39MB/s               trainingandtestdata   4%[                    ]   3.63M  4.52MB/s               trainingandtestdata   5%[>                   ]   4.57M  4.10MB/s               trainingandtestdata   7%[>                   ]   6.18M  4.70MB/s               trainingandtestdata   9%[>                   ]   7.20M  4.74MB/s               trainingandtestdata  10%[=>                  ]   8.18M  4.76MB/s               trainingandtestdata  11%[=>                  ]   9.18M  4.78MB/s               trainingandtestdata  13%[=>                  ]  10.18M  4.79MB/s               trainingandtestdata  14%[=>                  ]  11.18M  4.81MB/s               trainingandtestdata  15%[==>                 ]  12.18M  4.83MB/s               trainingandtestdata  16%[==>                 ]  13.18M  4.83MB/s               trainingandtestdata  18%[==>                 ]  14.18M  4.85MB/s               trainingandtestdata  19%[==>                 ]  15.16M  4.85MB/s    eta 13s    trainingandtestdata  20%[===>                ]  16.16M  4.96MB/s    eta 13s    trainingandtestdata  22%[===>                ]  17.16M  4.96MB/s    eta 13s    trainingandtestdata  23%[===>                ]  18.16M  4.96MB/s    eta 13s    trainingandtestdata  24%[===>                ]  19.16M  4.97MB/s    eta 13s    trainingandtestdata  25%[====>               ]  20.16M  4.96MB/s    eta 12s    trainingandtestdata  27%[====>               ]  21.16M  4.96MB/s    eta 12s    trainingandtestdata  28%[====>               ]  22.16M  4.96MB/s    eta 12s    trainingandtestdata  29%[====>               ]  23.16M  4.96MB/s    eta 12s    trainingandtestdata  30%[=====>              ]  23.77M  4.77MB/s    eta 12s    trainingandtestdata  32%[=====>              ]  25.38M  4.96MB/s    eta 11s    trainingandtestdata  34%[=====>              ]  26.38M  4.96MB/s    eta 11s    trainingandtestdata  35%[======>             ]  27.37M  4.96MB/s    eta 11s    trainingandtestdata  36%[======>             ]  28.37M  4.96MB/s    eta 11s    trainingandtestdata  37%[======>             ]  29.37M  4.96MB/s    eta 11s    trainingandtestdata  39%[======>             ]  30.37M  4.96MB/s    eta 10s    trainingandtestdata  40%[=======>            ]  31.37M  4.96MB/s    eta 10s    trainingandtestdata  41%[=======>            ]  32.37M  4.96MB/s    eta 10s    trainingandtestdata  43%[=======>            ]  33.37M  4.96MB/s    eta 10s    trainingandtestdata  44%[=======>            ]  34.37M  4.96MB/s    eta 10s    trainingandtestdata  45%[========>           ]  35.35M  4.96MB/s    eta 9s     trainingandtestdata  46%[========>           ]  36.37M  4.97MB/s    eta 9s     trainingandtestdata  48%[========>           ]  37.35M  4.96MB/s    eta 9s     trainingandtestdata  49%[========>           ]  38.35M  4.96MB/s    eta 9s     trainingandtestdata  50%[=========>          ]  39.35M  4.96MB/s    eta 9s     trainingandtestdata  52%[=========>          ]  40.35M  4.96MB/s    eta 8s     trainingandtestdata  53%[=========>          ]  41.35M  4.97MB/s    eta 8s     trainingandtestdata  54%[=========>          ]  42.37M  4.97MB/s    eta 8s     trainingandtestdata  55%[==========>         ]  43.35M  4.96MB/s    eta 8s     trainingandtestdata  57%[==========>         ]  44.37M  4.96MB/s    eta 8s     trainingandtestdata  58%[==========>         ]  45.37M  4.97MB/s    eta 7s     trainingandtestdata  59%[==========>         ]  46.35M  4.96MB/s    eta 7s     trainingandtestdata  61%[===========>        ]  47.37M  4.97MB/s    eta 7s     trainingandtestdata  62%[===========>        ]  48.37M  4.96MB/s    eta 7s     trainingandtestdata  63%[===========>        ]  49.37M  4.96MB/s    eta 7s     trainingandtestdata  64%[===========>        ]  50.37M  4.97MB/s    eta 6s     trainingandtestdata  66%[============>       ]  51.38M  4.97MB/s    eta 6s     trainingandtestdata  67%[============>       ]  52.38M  4.97MB/s    eta 6s     trainingandtestdata  68%[============>       ]  53.38M  4.96MB/s    eta 6s     trainingandtestdata  70%[=============>      ]  54.38M  4.97MB/s    eta 6s     trainingandtestdata  71%[=============>      ]  55.38M  4.96MB/s    eta 5s     trainingandtestdata  72%[=============>      ]  56.38M  4.96MB/s    eta 5s     trainingandtestdata  73%[=============>      ]  57.38M  4.96MB/s    eta 5s     trainingandtestdata  75%[==============>     ]  58.37M  4.96MB/s    eta 5s     trainingandtestdata  76%[==============>     ]  59.37M  4.96MB/s    eta 5s     trainingandtestdata  77%[==============>     ]  60.37M  4.96MB/s    eta 3s     trainingandtestdata  79%[==============>     ]  61.35M  4.96MB/s    eta 3s     trainingandtestdata  80%[===============>    ]  62.35M  4.96MB/s    eta 3s     trainingandtestdata  81%[===============>    ]  63.34M  4.96MB/s    eta 3s     trainingandtestdata  82%[===============>    ]  64.35M  4.96MB/s    eta 3s     trainingandtestdata  84%[===============>    ]  65.37M  4.96MB/s    eta 2s     trainingandtestdata  85%[================>   ]  66.35M  4.96MB/s    eta 2s     trainingandtestdata  86%[================>   ]  67.35M  4.96MB/s    eta 2s     trainingandtestdata  88%[================>   ]  68.37M  4.96MB/s    eta 2s     trainingandtestdata  89%[================>   ]  69.37M  4.96MB/s    eta 2s     trainingandtestdata  90%[=================>  ]  70.37M  4.96MB/s    eta 1s     trainingandtestdata  91%[=================>  ]  71.37M  4.96MB/s    eta 1s     trainingandtestdata  93%[=================>  ]  72.37M  4.96MB/s    eta 1s     trainingandtestdata  94%[=================>  ]  73.37M  4.96MB/s    eta 1s     trainingandtestdata  95%[==================> ]  74.37M  4.96MB/s    eta 1s     trainingandtestdata  96%[==================> ]  75.02M  4.79MB/s    eta 1s     trainingandtestdata  98%[==================> ]  76.59M  4.96MB/s    eta 1s     trainingandtestdata  99%[==================> ]  77.59M  4.96MB/s    eta 1s     trainingandtestdata 100%[===================>]  77.59M  4.97MB/s    in 16s     
+
+2021-11-22 01:12:28 (4.94 MB/s) - ‘trainingandtestdata.zip’ saved [81363704/81363704]
+
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ ls
+'*.txt.new'                                           [0m[01;34mgnuplot-main[0m
+ [01;34mCS185C[0m                                               review.txt
+ [01;34mWS4[0m                                                  [01;31mtrainingandtestdata.zip[0m
+ a4.txt                                               [01;34mworksheet1[0m
+ [01;34mamazon_review[0m                                        [01;34mws3[0m
+ amazon_reviews_us_Books_v1_02.tsv                    [01;34mws5[0m
+ amazon_reviews_us_Books_v1_02.tsv.stop.review_body   [01;34mws6[0m
+ [01;34massignment2[0m                                          [01;34mws7[0m
+ [01;34massignment3[0m                                          [01;34mws8[0m
+ cronfile2
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ unzip trainingandtestdata.zip 
+Archive:  trainingandtestdata.zip
+  inflating: testdata.manual.2009.06.14.csv  
+  inflating: training.1600000.processed.noemoticon.csv  
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ ls
+'*.txt.new'
+ [0m[01;34mCS185C[0m
+ [01;34mWS4[0m
+ a4.txt
+ [01;34mamazon_review[0m
+ amazon_reviews_us_Books_v1_02.tsv
+ amazon_reviews_us_Books_v1_02.tsv.stop.review_body
+ [01;34massignment2[0m
+ [01;34massignment3[0m
+ cronfile2
+ [01;34mgnuplot-main[0m
+ review.txt
+ testdata.manual.2009.06.14.csv
+ training.1600000.processed.noemoticon.csv
+ [01;31mtrainingandtestdata.zip[0m
+ [01;34mworksheet1[0m
+ [01;34mws3[0m
+ [01;34mws5[0m
+ [01;34mws6[0m
+ [01;34mws7[0m
+ [01;34mws8[0m
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ mkdir as4
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ mv training[K[K[K[K[K[K[K[K[K[K[Kmv testdata.manual.2009.06.14.csv as4
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ mv training.1600000.processed.noemoticon.csv as4
+]0;ong@f6linux14: ~[01;32mong@f6linux14[00m:[01;34m~[00m$ mv[K[Kcd asr[K4
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ mkdir REVIEWS
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ mkdir REVIE[KW[KEWSUNHELPFUL
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ head mkdir REVIEWSUNHELPFULhead [Ktraining.1600000.processed.noemoticon.csv 
+"0","1467810369","Mon Apr 06 22:19:45 PDT 2009","NO_QUERY","_TheSpecialOne_","@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D"
+"0","1467810672","Mon Apr 06 22:19:49 PDT 2009","NO_QUERY","scotthamilton","is upset that he can't update his Facebook by texting it... and might cry as a result  School today also. Blah!"
+"0","1467810917","Mon Apr 06 22:19:53 PDT 2009","NO_QUERY","mattycus","@Kenichan I dived many times for the ball. Managed to save 50%  The rest go out of bounds"
+"0","1467811184","Mon Apr 06 22:19:57 PDT 2009","NO_QUERY","ElleCTF","my whole body feels itchy and like its on fire "
+"0","1467811193","Mon Apr 06 22:19:57 PDT 2009","NO_QUERY","Karoli","@nationwideclass no, it's not behaving at all. i'm mad. why am i here? because I can't see you all over there. "
+"0","1467811372","Mon Apr 06 22:20:00 PDT 2009","NO_QUERY","joy_wolf","@Kwesidei not the whole crew "
+"0","1467811592","Mon Apr 06 22:20:03 PDT 2009","NO_QUERY","mybirch","Need a hug "
+"0","1467811594","Mon Apr 06 22:20:03 PDT 2009","NO_QUERY","coZZ","@LOLTrish hey  long time no see! Yes.. Rains a bit ,only a bit  LOL , I'm fine thanks , how's you ?"
+"0","1467811795","Mon Apr 06 22:20:05 PDT 2009","NO_QUERY","2Hood4Hollywood","@Tatiana_K nope they didn't have it "
+"0","1467812025","Mon Apr 06 22:20:09 PDT 2009","NO_QUERY","mimismo","@twittera que me muera ? "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -f "," -n -k 1[K1 training.1600000.processed.noemoticon.csv | tail -100 | awk [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kt[K-tail 10
+sort: cannot read: ,: No such file or directory
+
+Command '-tail' not found, did you mean:
+
+  command 'ctail' from deb byobu (5.133-0ubuntu1)
+  command 'rtail' from deb ruby-file-tail (1.2.0-1)
+  command 'xtail' from deb xtail (2.1-6)
+  command 'tail' from deb coreutils (8.30-3ubuntu2)
+  command 'mtail' from deb mtail (3.0.0~rc24.1-1ubuntu1)
+
+Try: apt install <deb name>
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -f "," -n -k 1 training.1600000.processed.noemoticon.csv | -tail 10[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "," -n -k 1 training.1600000.processed.noemoticon.csv[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[Ct "," -n -k 1 training.1600000.processed.noemoticon.cs[1@v[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C
+
+
+Command '-tail' not found, did you mean:
+
+  command 'mtail' from deb mtail (3.0.0~rc24.1-1ubuntu1)
+  command 'ctail' from deb byobu (5.133-0ubuntu1)
+  command 'xtail' from deb xtail (2.1-6)
+  command 'tail' from deb coreutils (8.30-3ubuntu2)
+  command 'rtail' from deb ruby-file-tail (1.2.0-1)
+
+Try: apt install <deb name>
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -t "," -n -k 1 training.1600000.processed.noemoticon.csv | -tail 10[K[K[K[K[K[K[K[Ktail -10
+"4","2193579249","Tue Jun 16 08:38:59 PDT 2009","NO_QUERY","razzberry5594","WOOOOO! Xbox is back "
+"4","2193579284","Tue Jun 16 08:38:59 PDT 2009","NO_QUERY","AgustinaP","@rmedina @LaTati Mmmm  That sounds absolutely perfect... but my schedule is full. I won't have time to lay in bed until Sunday. Ugh!!"
+"4","2193579434","Tue Jun 16 08:39:00 PDT 2009","NO_QUERY","sdancingsteph","ReCoVeRiNg FrOm ThE lOnG wEeKeNd "
+"4","2193579477","Tue Jun 16 08:39:00 PDT 2009","NO_QUERY","ChloeAmisha","@SCOOBY_GRITBOYS "
+"4","2193579489","Tue Jun 16 08:39:00 PDT 2009","NO_QUERY","EvolveTom","@Cliff_Forster Yeah, that does work better than just waiting for it  In the end I just wonder if I have time to keep up a good blog."
+"4","2193601966","Tue Jun 16 08:40:49 PDT 2009","NO_QUERY","AmandaMarie1028","Just woke up. Having no school is the best feeling ever "
+"4","2193601969","Tue Jun 16 08:40:49 PDT 2009","NO_QUERY","TheWDBoards","TheWDB.com - Very cool to hear old Walt interviews!  ♫ http://blip.fm/~8bmta"
+"4","2193601991","Tue Jun 16 08:40:49 PDT 2009","NO_QUERY","bpbabe","Are you ready for your MoJo Makeover? Ask me for details "
+"4","2193602064","Tue Jun 16 08:40:49 PDT 2009","NO_QUERY","tinydiamondz","Happy 38th Birthday to my boo of alll time!!! Tupac Amaru Shakur "
+"4","2193602129","Tue Jun 16 08:40:50 PDT 2009","NO_QUERY","RyanTrevMorris","happy #charitytuesday @theNSPCC @SparksCharity @SpeakingUpH4H "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -t "," -n -k 1 training.1600000.processed.noemoticon.csv | tail -10[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -t "," -n -k 1 training.1600000.processed.noemoticon.csv | tail -10[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[Khead -10
+"0","1467810369","Mon Apr 06 22:19:45 PDT 2009","NO_QUERY","_TheSpecialOne_","@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D"
+"0","1467810672","Mon Apr 06 22:19:49 PDT 2009","NO_QUERY","scotthamilton","is upset that he can't update his Facebook by texting it... and might cry as a result  School today also. Blah!"
+"0","1467810917","Mon Apr 06 22:19:53 PDT 2009","NO_QUERY","mattycus","@Kenichan I dived many times for the ball. Managed to save 50%  The rest go out of bounds"
+"0","1467811184","Mon Apr 06 22:19:57 PDT 2009","NO_QUERY","ElleCTF","my whole body feels itchy and like its on fire "
+"0","1467811193","Mon Apr 06 22:19:57 PDT 2009","NO_QUERY","Karoli","@nationwideclass no, it's not behaving at all. i'm mad. why am i here? because I can't see you all over there. "
+"0","1467811372","Mon Apr 06 22:20:00 PDT 2009","NO_QUERY","joy_wolf","@Kwesidei not the whole crew "
+"0","1467811592","Mon Apr 06 22:20:03 PDT 2009","NO_QUERY","mybirch","Need a hug "
+"0","1467811594","Mon Apr 06 22:20:03 PDT 2009","NO_QUERY","coZZ","@LOLTrish hey  long time no see! Yes.. Rains a bit ,only a bit  LOL , I'm fine thanks , how's you ?"
+"0","1467811795","Mon Apr 06 22:20:05 PDT 2009","NO_QUERY","2Hood4Hollywood","@Tatiana_K nope they didn't have it "
+"0","1467812025","Mon Apr 06 22:20:09 PDT 2009","NO_QUERY","mimismo","@twittera que me muera ? "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -t "," -n -k 1 training.1600000.processed.noemoticon.csv | head -10[K[K[K[K[K[K[K[Ktail -100 ![K| awk -F "\t[K[K," `[K'{printf $[K%s[K[K"%s,%s\n", %[K$5 [K.[K, $6 > "REVIWS/"[K[K[K[KEWS/" $2 ".txt}'
+awk: cmd. line:1: {printf "%s,%s\n", $5, $6 > "REVIEWS/" $2 ".txt}
+awk: cmd. line:1:                                           ^ unterminated string
+awk: cmd. line:1: {printf "%s,%s\n", $5, $6 > "REVIEWS/" $2 ".txt}
+awk: cmd. line:1:                                           ^ syntax error
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ sort -t "," -n -k 1 training.1600000.processed.noemoticon.csv | tail -100 | awk -F "," '{printf "%s,%s\n", $5, $6 > "REVIEWS/" $2 ".txt}'[K[K"}'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ls -latr REVIEWS
+total 408
+drwxrwxr-x 4 ong ong 4096 Nov 22 01:14  [0m[01;34m..[0m
+drwxrwxr-x 2 ong ong 4096 Nov 22 01:31  [01;34m.[0m
+-rw-rw-r-- 1 ong ong   82 Nov 22 01:31 '"2193602129".txt'
+-rw-rw-r-- 1 ong ong   83 Nov 22 01:31 '"2193602064".txt'
+-rw-rw-r-- 1 ong ong   69 Nov 22 01:31 '"2193601991".txt'
+-rw-rw-r-- 1 ong ong   95 Nov 22 01:31 '"2193601969".txt'
+-rw-rw-r-- 1 ong ong   77 Nov 22 01:31 '"2193601966".txt'
+-rw-rw-r-- 1 ong ong   33 Nov 22 01:31 '"2193579489".txt'
+-rw-rw-r-- 1 ong ong   34 Nov 22 01:31 '"2193579477".txt'
+-rw-rw-r-- 1 ong ong   52 Nov 22 01:31 '"2193579434".txt'
+-rw-rw-r-- 1 ong ong  148 Nov 22 01:31 '"2193579284".txt'
+-rw-rw-r-- 1 ong ong   40 Nov 22 01:31 '"2193579249".txt'
+-rw-rw-r-- 1 ong ong   49 Nov 22 01:31 '"2193579211".txt'
+-rw-rw-r-- 1 ong ong  138 Nov 22 01:31 '"2193579191".txt'
+-rw-rw-r-- 1 ong ong   88 Nov 22 01:31 '"2193579092".txt'
+-rw-rw-r-- 1 ong ong   50 Nov 22 01:31 '"2193579087".txt'
+-rw-rw-r-- 1 ong ong   44 Nov 22 01:31 '"2193578982".txt'
+-rw-rw-r-- 1 ong ong  112 Nov 22 01:31 '"2193578847".txt'
+-rw-rw-r-- 1 ong ong   34 Nov 22 01:31 '"2193578758".txt'
+-rw-rw-r-- 1 ong ong   96 Nov 22 01:31 '"2193578739".txt'
+-rw-rw-r-- 1 ong ong   84 Nov 22 01:31 '"2193578716".txt'
+-rw-rw-r-- 1 ong ong   78 Nov 22 01:31 '"2193578679".txt'
+-rw-rw-r-- 1 ong ong   33 Nov 22 01:31 '"2193578576".txt'
+-rw-rw-r-- 1 ong ong   42 Nov 22 01:31 '"2193578395".txt'
+-rw-rw-r-- 1 ong ong   88 Nov 22 01:31 '"2193578386".txt'
+-rw-rw-r-- 1 ong ong   27 Nov 22 01:31 '"2193578348".txt'
+-rw-rw-r-- 1 ong ong   31 Nov 22 01:31 '"2193578347".txt'
+-rw-rw-r-- 1 ong ong   99 Nov 22 01:31 '"2193578345".txt'
+-rw-rw-r-- 1 ong ong   87 Nov 22 01:31 '"2193578319".txt'
+-rw-rw-r-- 1 ong ong   57 Nov 22 01:31 '"2193578269".txt'
+-rw-rw-r-- 1 ong ong   68 Nov 22 01:31 '"2193578237".txt'
+-rw-rw-r-- 1 ong ong  100 Nov 22 01:31 '"2193578196".txt'
+-rw-rw-r-- 1 ong ong   88 Nov 22 01:31 '"2193578170".txt'
+-rw-rw-r-- 1 ong ong   69 Nov 22 01:31 '"2193578151".txt'
+-rw-rw-r-- 1 ong ong   33 Nov 22 01:31 '"2193578138".txt'
+-rw-rw-r-- 1 ong ong  141 Nov 22 01:31 '"2193577941".txt'
+-rw-rw-r-- 1 ong ong  104 Nov 22 01:31 '"2193577918".txt'
+-rw-rw-r-- 1 ong ong   46 Nov 22 01:31 '"2193577904".txt'
+-rw-rw-r-- 1 ong ong   43 Nov 22 01:31 '"2193577870".txt'
+-rw-rw-r-- 1 ong ong   51 Nov 22 01:31 '"2193577852".txt'
+-rw-rw-r-- 1 ong ong  110 Nov 22 01:31 '"2193577828".txt'
+-rw-rw-r-- 1 ong ong   60 Nov 22 01:31 '"2193577726".txt'
+-rw-rw-r-- 1 ong ong   38 Nov 22 01:31 '"2193577680".txt'
+-rw-rw-r-- 1 ong ong   88 Nov 22 01:31 '"2193577671".txt'
+-rw-rw-r-- 1 ong ong  147 Nov 22 01:31 '"2193577641".txt'
+-rw-rw-r-- 1 ong ong   80 Nov 22 01:31 '"2193577633".txt'
+-rw-rw-r-- 1 ong ong  104 Nov 22 01:31 '"2193577616".txt'
+-rw-rw-r-- 1 ong ong  135 Nov 22 01:31 '"2193577602".txt'
+-rw-rw-r-- 1 ong ong   81 Nov 22 01:31 '"2193577592".txt'
+-rw-rw-r-- 1 ong ong  120 Nov 22 01:31 '"2193577586".txt'
+-rw-rw-r-- 1 ong ong  132 Nov 22 01:31 '"2193577517".txt'
+-rw-rw-r-- 1 ong ong   97 Nov 22 01:31 '"2193577391".txt'
+-rw-rw-r-- 1 ong ong   44 Nov 22 01:31 '"2193577328".txt'
+-rw-rw-r-- 1 ong ong  115 Nov 22 01:31 '"2193577315".txt'
+-rw-rw-r-- 1 ong ong   30 Nov 22 01:31 '"2193577232".txt'
+-rw-rw-r-- 1 ong ong   71 Nov 22 01:31 '"2193577228".txt'
+-rw-rw-r-- 1 ong ong   17 Nov 22 01:31 '"2193577154".txt'
+-rw-rw-r-- 1 ong ong  112 Nov 22 01:31 '"2193577021".txt'
+-rw-rw-r-- 1 ong ong   54 Nov 22 01:31 '"2193576854".txt'
+-rw-rw-r-- 1 ong ong   66 Nov 22 01:31 '"2193576832".txt'
+-rw-rw-r-- 1 ong ong   51 Nov 22 01:31 '"2193576815".txt'
+-rw-rw-r-- 1 ong ong   52 Nov 22 01:31 '"2193576797".txt'
+-rw-rw-r-- 1 ong ong   95 Nov 22 01:31 '"2193576737".txt'
+-rw-rw-r-- 1 ong ong   60 Nov 22 01:31 '"2193576691".txt'
+-rw-rw-r-- 1 ong ong   57 Nov 22 01:31 '"2193576655".txt'
+-rw-rw-r-- 1 ong ong   85 Nov 22 01:31 '"2193576573".txt'
+-rw-rw-r-- 1 ong ong   34 Nov 22 01:31 '"2193576534".txt'
+-rw-rw-r-- 1 ong ong   74 Nov 22 01:31 '"2193576530".txt'
+-rw-rw-r-- 1 ong ong  151 Nov 22 01:31 '"2193576512".txt'
+-rw-rw-r-- 1 ong ong   93 Nov 22 01:31 '"2193576469".txt'
+-rw-rw-r-- 1 ong ong  122 Nov 22 01:31 '"2193576442".txt'
+-rw-rw-r-- 1 ong ong   40 Nov 22 01:31 '"2193576427".txt'
+-rw-rw-r-- 1 ong ong   64 Nov 22 01:31 '"2193576380".txt'
+-rw-rw-r-- 1 ong ong  156 Nov 22 01:31 '"2193576360".txt'
+-rw-rw-r-- 1 ong ong   71 Nov 22 01:31 '"2193576264".txt'
+-rw-rw-r-- 1 ong ong   47 Nov 22 01:31 '"2193576077".txt'
+-rw-rw-r-- 1 ong ong   77 Nov 22 01:31 '"2193576004".txt'
+-rw-rw-r-- 1 ong ong   79 Nov 22 01:31 '"2193576003".txt'
+-rw-rw-r-- 1 ong ong   64 Nov 22 01:31 '"2193575988".txt'
+-rw-rw-r-- 1 ong ong   48 Nov 22 01:31 '"2193575955".txt'
+-rw-rw-r-- 1 ong ong  160 Nov 22 01:31 '"2193575912".txt'
+-rw-rw-r-- 1 ong ong  151 Nov 22 01:31 '"2193575839".txt'
+-rw-rw-r-- 1 ong ong   94 Nov 22 01:31 '"2193575834".txt'
+-rw-rw-r-- 1 ong ong  121 Nov 22 01:31 '"2193575755".txt'
+-rw-rw-r-- 1 ong ong   52 Nov 22 01:31 '"2193575745".txt'
+-rw-rw-r-- 1 ong ong   66 Nov 22 01:31 '"2193575737".txt'
+-rw-rw-r-- 1 ong ong   64 Nov 22 01:31 '"2193575729".txt'
+-rw-rw-r-- 1 ong ong   37 Nov 22 01:31 '"2193575571".txt'
+-rw-rw-r-- 1 ong ong  101 Nov 22 01:31 '"2193575499".txt'
+-rw-rw-r-- 1 ong ong   99 Nov 22 01:31 '"2193575376".txt'
+-rw-rw-r-- 1 ong ong   98 Nov 22 01:31 '"2193575338".txt'
+-rw-rw-r-- 1 ong ong   42 Nov 22 01:31 '"2193575246".txt'
+-rw-rw-r-- 1 ong ong   50 Nov 22 01:31 '"2193575236".txt'
+-rw-rw-r-- 1 ong ong   87 Nov 22 01:31 '"2193575214".txt'
+-rw-rw-r-- 1 ong ong   34 Nov 22 01:31 '"2193575210".txt'
+-rw-rw-r-- 1 ong ong   87 Nov 22 01:31 '"2193575126".txt'
+-rw-rw-r-- 1 ong ong  141 Nov 22 01:31 '"2193575079".txt'
+-rw-rw-r-- 1 ong ong   55 Nov 22 01:31 '"2193575004".txt'
+-rw-rw-r-- 1 ong ong   73 Nov 22 01:31 '"2193575000".txt'
+-rw-rw-r-- 1 ong ong  152 Nov 22 01:31 '"2193574986".txt'
+-rw-rw-r-- 1 ong ong  109 Nov 22 01:31 '"2193574981".txt'
+-rw-rw-r-- 1 ong ong   66 Nov 22 01:31 '"2193574897".txt'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for i in REVIe[KEWS/[K[K[K[K[K[K[K[K[K[K[K[K[K[Kf[K f in REVIe[KEWS/; do sed "s/ing / /g" filename[K[K[K[K[K[K[K[K$f; exit[K[K[K[Kdone
+sed: read error on REVIEWS/: Is a directory
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/; do sed "s/ing / /g" $f; done[C[C[C[C[C[C[C[C[1@ [1P[1@f[1@i[1@l[1P[1P[1P[1@*[1@/[1@t[1P[1P[1@.[1@t[1@x[1@t
+"johnwelshphd","@cris1015 My goal on stocks like $MTXX is to help
+"RockComplacency","@wolfpack40 That's what I'm thinking! Knock her out of the water... very satisfying...  "
+"xxiolla1","@Jchawes yeah what about remotes for your car ? I couldn't find mine and didn't know how I was gonna get in my car.with your keys dumbass "
+"Ten_Tenths","Post your Le Mans 2009 pics: .. I didn't really shoot much
+"say_my_name_too","@say_my_name TRAITOR!!!! love you "
+"CaraIsaac","@SarahG8s lol i wasnt on about the burns lol i was on about sumone  i know just seen. goin off twitter now gonna talk to sophie
+"Gregor_Boyd","been play big surf island and i've unlocked 5 trophies already hah "
+"themunny","@gabespears morn "
+"xDevikax","I really dont get why Jaylor split . Oh well her and Lucas Till suit !  x"
+"drjan","my cluster is back and I'm a happy man "
+"itsjustsuzieq","is excited for the day "
+"spiderylue","Oh my god. Cookie dough frijj. I just spaffed in my pants  so much joy for £1.05."
+"happykatie","@ShannonGilliam good luck!!  what an excit day   this is when the REAL fun begins
+"ohwhoa_svea","got our yearbooks in school  gonna try and get everyone to s them... wish me luck"
+"BeBo_Evilbunny","@PJA4ever Back.. "
+"herreramarisa","@drummeroy nice new name  how you hold up?"
+"MzGr33n4ppL3","Hello good morning!  i wanna do someth today."
+"rockchick_30","@30STMWithJared love your tattoo! "
+"Belga777","MTO bom esse empire of sports...o futebol eh um pouco dificil pq usa o mouse mas eh bem divertido e online "
+"arikabu","@planetchuckie haha! i wonder why i made her my pic... hmm.. will change it soon "
+"bendotorg","Largest/fastest hotspot in U.S.A. is located in Atlanta. Suck it people outside the ATL  JK...no idea how to use it! http://bit.ly/eDjz7"
+"followtweety","I just switched back to Opera (us the moi skin). It's really fast &amp; stable to work with - I'm lov it  http://www.opera.com/download/"
+"misscaroline16","scrubbed into surgery today "
+"Kromm","Bloody knackered! And still got two hours to go. Still
+"izzybizzy113","@McflyEngland haha yeah  but of course i love McFly more  lol"
+"helenblenkinsop","**** yeah!! I got the local Clinical Psychologist job!! "
+"Marianne_P","wants the @Jonasbrothers album "
+"taylorbeckett","Wow 8:40 am is pretty early for me to wake up. Lol. "
+"MandyStocker","dropp molly off gett ice cream with Aaron I want him to meet Manda  spend the night with Meredith and Lauren I missed them dearly"
+"tkosofsky","@mom2jwo Woo hoo!!!! Keep work hard my dear!! "
+"wonder_nat","@AndrewDearl *yawns* "
+"emma_b_xox","Had an injection today. Not fun  the rrst of the school day has been good. Tonight i am go danc yey "
+"walkinlooove","ahhh yay! found my miss sunglasses while clean my office!! so happy. "
+"Bloodl3tt3r","Lmao @seizuresalad that was cute and awesome  hahahahahahahahahahahahahaha!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ♫ http://blip.fm/~8bmo7"
+"tly23452","Process another credit application!  More hours to bill! "
+"Essence05","@ohsosweettreats Omg
+"Emm94","Is back from gett the new jonas brothers cd!!!  on to my iPod it goes!!"
+"eratyptin","@siahoney I am good thanks!    How is #Eric
+"LarryEisner","@varin I'm pray for you!!!  Hang in there
+"ajenne","OMG!!!!!!!!!! My dad will be hav surgery today  Please keep him in your prayers "
+"jaycemiguel","@MsKCJones Yeah it's very irritating
+"sarasmile13","@gone2dmb agreed!  Soulful eyes.  "
+"martybaltiero","is now a dsc student.  http://twitpic.com/7jp4d"
+"lindsaycherry","@cate45_1999 I love all the pics!! "
+"eyesandwings","@ShanButterfly a star bowl (she loves stars) filled with dark chocolate. there's also a card. "
+"kcnitt","oh yes
+"Sirley","@chriscuzzy someone wanted a &quot;Cuzzy&quot; memorabilia "
+"nrgins","@CharlotteSpeaks So
+"jamie_ox","do another piece of media homework is that all i get now :/ milkshake diet starts today woop woop "
+"xSandraaaaaa","find out what this is. "
+"andir00","OMG how good is ben and jerrys cookie dough icecream...come one really well goood lol
+"stephyway","oooo haha just wak up and ready to eat a delicious breakfast and prepared to go in the afternoon to watch a movie "
+"IsabellesTravel","#Traveltuesday @GuyNGirlTravels Because their tweets are hilarious LOL and they're great travelers "
+"ChelseaLately_","any ideaZ on what to get dad for father's day ? No socks tho "
+"charitojoy","God works mysteriously!i learn that if u think of the world wonderfully you will receive more &amp; get what u ask for "
+"twisted4ddub","@_CrC_ mornin.. I'm enjoy a beautiful morn here in Phoenix. not too bad out yet "
+"tattoodancer35","Woke up feel rested and refreshed today! It's about time "
+"Pixgremlin","@naijagal You just HAD to throw that in. Tell her that I say thanks for the eye contact at her Brixton gig. managed to get a shot! "
+"craiglparker","@siovene lol I don't blame you it's not the safest th in the world "
+"WParenthetical","@ashinynewcoin yeah
+"FrayBaby","@pokapolas love the donut and the toadstool.  "
+"ogreenthumb","@crgrs359 Skip the aquarium and check out these fish   A lot cheaper lol http://bit.ly/2lQbBv"
+"dacyj","@GroleauNET Yeah I'm be an ass today "
+"stephmartinez","@OHTristaN it's sunoudy "
+"heartcures","@kbonded Newsflash: It worked "
+"milliontwits","@stum450n Hi. Thanks for the follow. Nice website... check your carriage returns though
+"lexi234","got home an hour ago ate lunch watched some tv and now i listen to kelly clarkson no exam tomorrow yay!!!!!!!  3 down 4 to go"
+"paligurl93","check my mail "
+"victoriaquinnxo","done la examen! easy peasy  so proud of myself!!"
+"bobzipp","@davepell you're the undisputed authority on the topic.  goog recognizes!  "
+"adbillingsley","Thanks @eastwestchic &amp; @wangyip Thanks! That was just what I was look for "
+"gekkko","@marttn thanks Martin. not the most imaginative interface
+"millerslab","@MikeJonesPhoto Congrats Mike  Way to go!"
+"luckygeorgeblog","http://twitpic.com/7jp4n - OMG! Office Space... I wanna steal it. "
+"Kristah_Diggs","@yrclndstnlvr ahaha nooo you were just away from everyone else! i had to see Kara
+"CoachChic","@BizCoachDeb  Hey
+"serianna","@mattycus Yeah
+"TeamUKskyvixen","@MayorDorisWolfe Thats my girl - dish out the &quot;advice&quot; "
+"LaurenMoo10","@shebbs123 i second that "
+"angel_sammy04","In the garden "
+"puchal_ek","@myheartandmind jo jen by nemuselo zrovna té holce ael co nic "
+"youtubelatest","Another Comment Contest! [;: Yay!!!  http://tinyurl.com/m6j2an"
+"Mandi_Davenport","@thrillmesoon i figured out how to see my tweets and facebook status updates
+"xoAurixo","@oxhot theri tomorrow
+"RobFoxKerr","You heard it here first -- We're hav a girl. Hope it has my looks and Wendy's brains. (Kidding
+"LISKFEST","if ur the lead singer in a band
+"marhgil","@tarayqueen too much ads on my blog. "
+"cathriiin","@La_r_a NEVEER  I think that you both will get on well with each other..."
+"tellman","@Roy_Everitt ha- good job. that's right - we gotta throw that #bigrun tag EVERYWHERE! I wanna get it trend before I start "
+"jazzstixx","@Ms_Hip_Hop im glad ur do well "
+"razzberry5594","WOOOOO! Xbox is back "
+"AgustinaP","@rmedina @LaTati Mmmm  That sounds absolutely perfect... but my schedule is full. I won't have time to lay in bed until Sunday. Ugh!!"
+"sdancingsteph","ReCoVeRiNg FrOm ThE lOnG wEeKeNd "
+"ChloeAmisha","@SCOOBY_GRITBOYS "
+"EvolveTom","@Cliff_Forster Yeah
+"AmandaMarie1028","Just woke up. Hav no school is the best feel ever "
+"TheWDBoards","TheWDB.com - Very cool to hear old Walt interviews!  ♫ http://blip.fm/~8bmta"
+"bpbabe","Are you ready for your MoJo Makeover? Ask me for details "
+"tinydiamondz","Happy 38th Birthday to my boo of alll time!!! Tupac Amaru Shakur "
+"RyanTrevMorris","happy #charitytuesday @theNSPCC @SparksCharity @SpeakingUpH4H "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; do sed "s/ing / /g" $f; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kvi 21[K[K[K[K[Kvi REVIEWS/214[K935q[K77[K[K[K[K[K[K[K"2193577726".txt
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"REVIEWS/2193577726.txt" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll"REVIEWS/2193577726.txt" [New File][1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;1HType  :qa  and press <Enter> to exit Vim[24;63H[K[24;63H0,0-1[9CAll[1;1H[?25h[?25l[24;53Hq[1;1H[?25h[?25l[24;54Ha[1;1H[24;1H[1mrecording @a[m[24;13H[K[24;63H0,0-1[9CAll[1;1H[?25h[?25l[24;53Hq[1;1H[24;1H[K[1;1H[24;63H0,0-1[9CAll[1;1H[?25h[?25l[24;53H^M[1;1H[24;53H  [1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H:[1;1H[24;53H[K[24;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ rev[K[K[Kls -lagtr REVIEWS[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kvi REVIEWS/"2193577726".txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in REVIEWS/*.txt; do sed "s/ing / /g" $f; done[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pls -latr REVIEWSfor f in REVIEWS/; do sed "s/ing / /g" $f; done[C[1P[1P[1P[1@e[1@d
+sed: read error on REVIEWS/: Is a directory
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/; do sed "s/ed / /g" $f; done[1@*[1@.[1@t[1@x[1@t
+"johnwelshphd","@cris1015 My goal on stocks like $MTXX is to help
+"RockComplacency","@wolfpack40 That's what I'm thinking! Knock her out of the water... very satisfying...  "
+"xxiolla1","@Jchawes yeah what about remotes for your car ? I couldn't find mine and didn't know how I was gonna get in my car.with your keys dumbass "
+"Ten_Tenths","Post your Le Mans 2009 pics: .. I didn't really shoot much
+"say_my_name_too","@say_my_name TRAITOR!!!! love you "
+"CaraIsaac","@SarahG8s lol i wasnt on about the burns lol i was on about sumone  i know just seen. goin off twitter now gonna talk to sophie
+"Gregor_Boyd","been playing big surf island and i've unlock 5 trophies already hah "
+"themunny","@gabespears morning "
+"xDevikax","I really dont get why Jaylor split . Oh well her and Lucas Till suit !  x"
+"drjan","my cluster is back and I'm a happy man "
+"itsjustsuzieq","is excit for the day "
+"spiderylue","Oh my god. Cookie dough frijj. I just spaff in my pants  so much joy for £1.05."
+"happykatie","@ShannonGilliam good luck!!  what an exciting day   this is when the REAL fun begins
+"ohwhoa_svea","got our yearbooks in school  gonna try and get everyone to sing them... wish me luck"
+"BeBo_Evilbunny","@PJA4ever Back.. "
+"herreramarisa","@drummeroy nice new name  how you holding up?"
+"MzGr33n4ppL3","Hello good morning!  i wanna do something today."
+"rockchick_30","@30STMWithJar love your tattoo! "
+"Belga777","MTO bom esse empire of sports...o futebol eh um pouco dificil pq usa o mouse mas eh bem divertido e online "
+"arikabu","@planetchuckie haha! i wonder why i made her my pic... hmm.. will change it soon "
+"bendotorg","Largest/fastest hotspot in U.S.A. is locat in Atlanta. Suck it people outside the ATL  JK...no idea how to use it! http://bit.ly/eDjz7"
+"followtweety","I just switch back to Opera (using the moi skin). It's really fast &amp; stable to work with - I'm loving it  http://www.opera.com/download/"
+"misscaroline16","scrubb into surgery today "
+"Kromm","Bloody knackered! And still got two hours to go. Still
+"izzybizzy113","@McflyEngland haha yeah  but of course i love McFly more  lol"
+"helenblenkinsop","**** yeah!! I got the local Clinical Psychologist job!! "
+"Marianne_P","wants the @Jonasbrothers album "
+"taylorbeckett","Wow 8:40 am is pretty early for me to wake up. Lol. "
+"MandyStocker","dropping molly off getting ice cream with Aaron I want him to meet Manda  spending the night with Meredith and Lauren I miss them dearly"
+"tkosofsky","@mom2jwo Woo hoo!!!! Keep working hard my dear!! "
+"wonder_nat","@AndrewDearling *yawns* "
+"emma_b_xox","Had an injection today. Not fun  the rrst of the school day has been good. Tonight i am going dancing yey "
+"walkinlooove","ahhh yay! found my missing sunglasses while cleaning my office!! so happy. "
+"Bloodl3tt3r","Lmao @seizuresalad that was cute and awesome  hahahahahahahahahahahahahaha!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ♫ http://blip.fm/~8bmo7"
+"tly23452","Processing another credit application!  More hours to bill! "
+"Essence05","@ohsosweettreats Omg
+"Emm94","Is back from getting the new jonas brothers cd!!!  on to my iPod it goes!!"
+"eratyptin","@siahoney I am good thanks!    How is #Eric
+"LarryEisner","@varin I'm praying for you!!!  Hang in there
+"ajenne","OMG!!!!!!!!!! My dad will be having surgery today  Please keep him in your prayers "
+"jaycemiguel","@MsKCJones Yeah it's very irritating
+"sarasmile13","@gone2dmb agreed!  Soulful eyes.  "
+"martybaltiero","is now a dsc student.  http://twitpic.com/7jp4d"
+"lindsaycherry","@cate45_1999 I love all the pics!! "
+"eyesandwings","@ShanButterfly a star bowl (she loves stars) fill with dark chocolate. there's also a card. "
+"kcnitt","oh yes
+"Sirley","@chriscuzzy someone want a &quot;Cuzzy&quot; memorabilia "
+"nrgins","@CharlotteSpeaks So
+"jamie_ox","doing another piece of media homework is that all i get now :/ milkshake diet starts today woop woop "
+"xSandraaaaaa","finding out what this is. "
+"andir00","OMG how good is ben and jerrys cookie dough icecream...come one really well goood lol
+"stephyway","oooo haha just waking up and ready to eat a delicious breakfast and prepar to go in the afternoon to watch a movie "
+"IsabellesTravel","#Traveltuesday @GuyNGirlTravels Because their tweets are hilarious LOL and they're great travelers "
+"ChelseaLately_","any ideaZ on what to get dad for father's day ? No socks tho "
+"charitojoy","God works mysteriously!i learn that if u think of the world wonderfully you will receive more &amp; get what u ask for "
+"twisted4ddub","@_CrC_ mornin.. I'm enjoying a beautiful morning here in Phoenix. not too bad out yet "
+"tattoodancer35","Woke up feeling rest and refresh today! It's about time "
+"Pixgremlin","@naijagal You just HAD to throw that in. Tell her that I say thanks for the eye contact at her Brixton gig. manag to get a shot! "
+"craiglparker","@siovene lol I don't blame you it's not the safest thing in the world "
+"WParenthetical","@ashinynewcoin yeah
+"FrayBaby","@pokapolas love the donut and the toadstool.  "
+"ogreenthumb","@crgrs359 Skip the aquarium and check out these fish   A lot cheaper lol http://bit.ly/2lQbBv"
+"dacyj","@GroleauNET Yeah I'm being an ass today "
+"stephmartinez","@OHTristaN it's sunoudy "
+"heartcures","@kbond Newsflash: It work "
+"milliontwits","@stum450n Hi. Thanks for the follow. Nice website... check your carriage returns though
+"lexi234","got home an hour ago ate lunch watch some tv and now i listening to kelly clarkson no exam tomorrow yay!!!!!!!  3 down 4 to go"
+"paligurl93","checking my mail "
+"victoriaquinnxo","done la examen! easy peasy  so proud of myself!!"
+"bobzipp","@davepell you're the undisput authority on the topic.  goog recognizes!  "
+"adbillingsley","Thanks @eastwestchic &amp; @wangyip Thanks! That was just what I was looking for "
+"gekkko","@marttn thanks Martin. not the most imaginative interface
+"millerslab","@MikeJonesPhoto Congrats Mike  Way to go!"
+"luckygeorgeblog","http://twitpic.com/7jp4n - OMG! Office Space... I wanna steal it. "
+"Kristah_Diggs","@yrclndstnlvr ahaha nooo you were just away from everyone else! i had to see Kara
+"CoachChic","@BizCoachDeb  Hey
+"serianna","@mattycus Yeah
+"TeamUKskyvixen","@MayorDorisWolfe Thats my girl - dishing out the &quot;advice&quot; "
+"LaurenMoo10","@shebbs123 i second that "
+"angel_sammy04","In the garden "
+"puchal_ek","@myheartandmind jo jen by nemuselo zrovna té holce ael co nic "
+"youtubelatest","Another Commenting Contest! [;: Yay!!!  http://tinyurl.com/m6j2an"
+"Mandi_Davenport","@thrillmesoon i figur out how to see my tweets and facebook status updates
+"xoAurixo","@oxhot theri tomorrow
+"RobFoxKerr","You heard it here first -- We're having a girl. Hope it has my looks and Wendy's brains. (Kidding
+"LISKFEST","if ur the lead singer in a band
+"marhgil","@tarayqueen too much ads on my blog. "
+"cathriiin","@La_r_a NEVEER  I think that you both will get on well with each other..."
+"tellman","@Roy_Everitt ha- good job. that's right - we gotta throw that #bigrun tag EVERYWHERE! I wanna get it trending before I start "
+"jazzstixx","@Ms_Hip_Hop im glad ur doing well "
+"razzberry5594","WOOOOO! Xbox is back "
+"AgustinaP","@rmedina @LaTati Mmmm  That sounds absolutely perfect... but my schedule is full. I won't have time to lay in b until Sunday. Ugh!!"
+"sdancingsteph","ReCoVeRiNg FrOm ThE lOnG wEeKeNd "
+"ChloeAmisha","@SCOOBY_GRITBOYS "
+"EvolveTom","@Cliff_Forster Yeah
+"AmandaMarie1028","Just woke up. Having no school is the best feeling ever "
+"TheWDBoards","TheWDB.com - Very cool to hear old Walt interviews!  ♫ http://blip.fm/~8bmta"
+"bpbabe","Are you ready for your MoJo Makeover? Ask me for details "
+"tinydiamondz","Happy 38th Birthday to my boo of alll time!!! Tupac Amaru Shakur "
+"RyanTrevMorris","happy #charitytuesday @theNSPCC @SparksCharity @SpeakingUpH4H "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; do sed "s/ed / /g" $f; done[1P[1P[1@s
+"johnwelshphd","@cris1015 My goal on stock like $MTXX i to help
+"RockComplacency","@wolfpack40 That' what I'm thinking! Knock her out of the water... very satisfying...  "
+"xxiolla1","@Jchawe yeah what about remote for your car ? I couldn't find mine and didn't know how I wa gonna get in my car.with your key dumbas "
+"Ten_Tenths","Post your Le Man 2009 pics: .. I didn't really shoot much
+"say_my_name_too","@say_my_name TRAITOR!!!! love you "
+"CaraIsaac","@SarahG8 lol i wasnt on about the burn lol i wa on about sumone  i know just seen. goin off twitter now gonna talk to sophie
+"Gregor_Boyd","been playing big surf island and i've unlocked 5 trophie already hah "
+"themunny","@gabespear morning "
+"xDevikax","I really dont get why Jaylor split . Oh well her and Luca Till suit !  x"
+"drjan","my cluster i back and I'm a happy man "
+"itsjustsuzieq","i excited for the day "
+"spiderylue","Oh my god. Cookie dough frijj. I just spaffed in my pant  so much joy for £1.05."
+"happykatie","@ShannonGilliam good luck!!  what an exciting day   thi i when the REAL fun begins
+"ohwhoa_svea","got our yearbook in school  gonna try and get everyone to sing them... wish me luck"
+"BeBo_Evilbunny","@PJA4ever Back.. "
+"herreramarisa","@drummeroy nice new name  how you holding up?"
+"MzGr33n4ppL3","Hello good morning!  i wanna do something today."
+"rockchick_30","@30STMWithJared love your tattoo! "
+"Belga777","MTO bom esse empire of sports...o futebol eh um pouco dificil pq usa o mouse ma eh bem divertido e online "
+"arikabu","@planetchuckie haha! i wonder why i made her my pic... hmm.. will change it soon "
+"bendotorg","Largest/fastest hotspot in U.S.A. i located in Atlanta. Suck it people outside the ATL  JK...no idea how to use it! http://bit.ly/eDjz7"
+"followtweety","I just switched back to Opera (using the moi skin). It' really fast &amp; stable to work with - I'm loving it  http://www.opera.com/download/"
+"misscaroline16","scrubbed into surgery today "
+"Kromm","Bloody knackered! And still got two hour to go. Still
+"izzybizzy113","@McflyEngland haha yeah  but of course i love McFly more  lol"
+"helenblenkinsop","**** yeah!! I got the local Clinical Psychologist job!! "
+"Marianne_P","want the @Jonasbrother album "
+"taylorbeckett","Wow 8:40 am i pretty early for me to wake up. Lol. "
+"MandyStocker","dropping molly off getting ice cream with Aaron I want him to meet Manda  spending the night with Meredith and Lauren I missed them dearly"
+"tkosofsky","@mom2jwo Woo hoo!!!! Keep working hard my dear!! "
+"wonder_nat","@AndrewDearling *yawns* "
+"emma_b_xox","Had an injection today. Not fun  the rrst of the school day ha been good. Tonight i am going dancing yey "
+"walkinlooove","ahhh yay! found my missing sunglasse while cleaning my office!! so happy. "
+"Bloodl3tt3r","Lmao @seizuresalad that wa cute and awesome  hahahahahahahahahahahahahaha!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ♫ http://blip.fm/~8bmo7"
+"tly23452","Processing another credit application!  More hour to bill! "
+"Essence05","@ohsosweettreat Omg
+"Emm94","I back from getting the new jona brother cd!!!  on to my iPod it goes!!"
+"eratyptin","@siahoney I am good thanks!    How i #Eric
+"LarryEisner","@varin I'm praying for you!!!  Hang in there
+"ajenne","OMG!!!!!!!!!! My dad will be having surgery today  Please keep him in your prayer "
+"jaycemiguel","@MsKCJone Yeah it' very irritating
+"sarasmile13","@gone2dmb agreed!  Soulful eyes.  "
+"martybaltiero","i now a dsc student.  http://twitpic.com/7jp4d"
+"lindsaycherry","@cate45_1999 I love all the pics!! "
+"eyesandwings","@ShanButterfly a star bowl (she love stars) filled with dark chocolate. there' also a card. "
+"kcnitt","oh yes
+"Sirley","@chriscuzzy someone wanted a &quot;Cuzzy&quot; memorabilia "
+"nrgins","@CharlotteSpeak So
+"jamie_ox","doing another piece of media homework i that all i get now :/ milkshake diet start today woop woop "
+"xSandraaaaaa","finding out what thi is. "
+"andir00","OMG how good i ben and jerry cookie dough icecream...come one really well goood lol
+"stephyway","oooo haha just waking up and ready to eat a deliciou breakfast and prepared to go in the afternoon to watch a movie "
+"IsabellesTravel","#Traveltuesday @GuyNGirlTravel Because their tweet are hilariou LOL and they're great traveler "
+"ChelseaLately_","any ideaZ on what to get dad for father' day ? No sock tho "
+"charitojoy","God work mysteriously!i learn that if u think of the world wonderfully you will receive more &amp; get what u ask for "
+"twisted4ddub","@_CrC_ mornin.. I'm enjoying a beautiful morning here in Phoenix. not too bad out yet "
+"tattoodancer35","Woke up feeling rested and refreshed today! It' about time "
+"Pixgremlin","@naijagal You just HAD to throw that in. Tell her that I say thank for the eye contact at her Brixton gig. managed to get a shot! "
+"craiglparker","@siovene lol I don't blame you it' not the safest thing in the world "
+"WParenthetical","@ashinynewcoin yeah
+"FrayBaby","@pokapola love the donut and the toadstool.  "
+"ogreenthumb","@crgrs359 Skip the aquarium and check out these fish   A lot cheaper lol http://bit.ly/2lQbBv"
+"dacyj","@GroleauNET Yeah I'm being an as today "
+"stephmartinez","@OHTristaN it' sunoudy "
+"heartcures","@kbonded Newsflash: It worked "
+"milliontwits","@stum450n Hi. Thank for the follow. Nice website... check your carriage return though
+"lexi234","got home an hour ago ate lunch watched some tv and now i listening to kelly clarkson no exam tomorrow yay!!!!!!!  3 down 4 to go"
+"paligurl93","checking my mail "
+"victoriaquinnxo","done la examen! easy peasy  so proud of myself!!"
+"bobzipp","@davepell you're the undisputed authority on the topic.  goog recognizes!  "
+"adbillingsley","Thank @eastwestchic &amp; @wangyip Thanks! That wa just what I wa looking for "
+"gekkko","@marttn thank Martin. not the most imaginative interface
+"millerslab","@MikeJonesPhoto Congrat Mike  Way to go!"
+"luckygeorgeblog","http://twitpic.com/7jp4n - OMG! Office Space... I wanna steal it. "
+"Kristah_Diggs","@yrclndstnlvr ahaha nooo you were just away from everyone else! i had to see Kara
+"CoachChic","@BizCoachDeb  Hey
+"serianna","@mattycu Yeah
+"TeamUKskyvixen","@MayorDorisWolfe That my girl - dishing out the &quot;advice&quot; "
+"LaurenMoo10","@shebbs123 i second that "
+"angel_sammy04","In the garden "
+"puchal_ek","@myheartandmind jo jen by nemuselo zrovna té holce ael co nic "
+"youtubelatest","Another Commenting Contest! [;: Yay!!!  http://tinyurl.com/m6j2an"
+"Mandi_Davenport","@thrillmesoon i figured out how to see my tweet and facebook statu updates
+"xoAurixo","@oxhot theri tomorrow
+"RobFoxKerr","You heard it here first -- We're having a girl. Hope it ha my look and Wendy' brains. (Kidding
+"LISKFEST","if ur the lead singer in a band
+"marhgil","@tarayqueen too much ad on my blog. "
+"cathriiin","@La_r_a NEVEER  I think that you both will get on well with each other..."
+"tellman","@Roy_Everitt ha- good job. that' right - we gotta throw that #bigrun tag EVERYWHERE! I wanna get it trending before I start "
+"jazzstixx","@Ms_Hip_Hop im glad ur doing well "
+"razzberry5594","WOOOOO! Xbox i back "
+"AgustinaP","@rmedina @LaTati Mmmm  That sound absolutely perfect... but my schedule i full. I won't have time to lay in bed until Sunday. Ugh!!"
+"sdancingsteph","ReCoVeRiNg FrOm ThE lOnG wEeKeNd "
+"ChloeAmisha","@SCOOBY_GRITBOYS "
+"EvolveTom","@Cliff_Forster Yeah
+"AmandaMarie1028","Just woke up. Having no school i the best feeling ever "
+"TheWDBoards","TheWDB.com - Very cool to hear old Walt interviews!  ♫ http://blip.fm/~8bmta"
+"bpbabe","Are you ready for your MoJo Makeover? Ask me for detail "
+"tinydiamondz","Happy 38th Birthday to my boo of alll time!!! Tupac Amaru Shakur "
+"RyanTrevMorris","happy #charitytuesday @theNSPCC @SparksCharity @SpeakingUpH4H "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; do sed "s/s / /g" $f; done[1P[1@a[1@[[C[1@ [1@;[1@.[1@,[1@]
+"johnwelshphd","@cris1015 My goal on stocks like $MTXX is to help
+"RockComplacency","@wolfpack40 That's what I'm thinking! Knock her out of the water... very satisfying...  "
+"xxiolla1","@Jchawes yeah what about remotes for your car ? I couldn't find mine and didn't know how I was gonna get in my car.with your keys dumbass "
+"Ten_Tenths","Post your Le Mans 2009 pics: .. I didn't really shoot much
+"say_my_name_too","@say_my_name TRAITOR!!!! love you "
+"CaraIsaac","@SarahG8s lol i wasnt on about the burns lol i was on about sumone  i know just seen. goin off twitter now gonna talk to sophie
+"Gregor_Boyd","been playing big surf island and i've unlocked 5 trophies already hah "
+"themunny","@gabespears morning "
+"xDevikax","I really dont get why Jaylor split . Oh well her and Lucas Till suit !  x"
+"drjan","my cluster is back and I'm a happy man "
+"itsjustsuzieq","is excited for the day "
+"spiderylue","Oh my god. Cookie dough frijj. I just spaffed in my pants  so much joy for £1.05."
+"happykatie","@ShannonGilliam good luck!!  what an exciting day   this is when the REAL fun begins
+"ohwhoa_svea","got our yearbooks in school  gonna try and get everyone to sing them... wish me luck"
+"BeBo_Evilbunny","@PJA4ever Back.. "
+"herreramarisa","@drummeroy nice new name  how you holding up?"
+"MzGr33n4ppL3","Hello good morning!  i wanna do something today."
+"rockchick_30","@30STMWithJared love your tattoo! "
+"Belga777","MTO bom esse empire of sports...o futebol eh um pouco dificil pq usa o mouse mas eh bem divertido e online "
+"arikabu","@planetchuckie haha! i wonder why i made her my pic... hmm.. will change it soon "
+"bendotorg","Largest/fastest hotspot in U.S.A. is located in Atlant Suck it people outside the ATL  JK...no idea how to use it! http://bit.ly/eDjz7"
+"followtweety","I just switched back to Opera (using the moi skin). It's really fast &amp; stable to work with - I'm loving it  http://www.opera.com/download/"
+"misscaroline16","scrubbed into surgery today "
+"Kromm","Bloody knackered! And still got two hours to go. Still
+"izzybizzy113","@McflyEngland haha yeah  but of course i love McFly more  lol"
+"helenblenkinsop","**** yeah!! I got the local Clinical Psychologist job!! "
+"Marianne_P","wants the @Jonasbrothers album "
+"taylorbeckett","Wow 8:40 am is pretty early for me to wake up. Lol. "
+"MandyStocker","dropping molly off getting ice cream with Aaron I want him to meet Mand spending the night with Meredith and Lauren I missed them dearly"
+"tkosofsky","@mom2jwo Woo hoo!!!! Keep working hard my dear!! "
+"wonder_nat","@AndrewDearling *yawns* "
+"emma_b_xox","Had an injection today. Not fun  the rrst of the school day has been good. Tonight i am going dancing yey "
+"walkinlooove","ahhh yay! found my missing sunglasses while cleaning my office!! so happy. "
+"Bloodl3tt3r","Lmao @seizuresalad that was cute and awesome  hahahahahahahahahahahahahaha!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ♫ http://blip.fm/~8bmo7"
+"tly23452","Processing another credit application!  More hours to bill! "
+"Essence05","@ohsosweettreats Omg
+"Emm94","Is back from getting the new jonas brothers cd!!!  on to my iPod it goes!!"
+"eratyptin","@siahoney I am good thanks!    How is #Eric
+"LarryEisner","@varin I'm praying for you!!!  Hang in there
+"ajenne","OMG!!!!!!!!!! My dad will be having surgery today  Please keep him in your prayers "
+"jaycemiguel","@MsKCJones Yeah it's very irritating
+"sarasmile13","@gone2dmb agreed!  Soulful eyes.  "
+"martybaltiero","is now a dsc student.  http://twitpic.com/7jp4d"
+"lindsaycherry","@cate45_1999 I love all the pics!! "
+"eyesandwings","@ShanButterfly a star bowl (she loves stars) filled with dark chocolate. there's also a card. "
+"kcnitt","oh yes
+"Sirley","@chriscuzzy someone wanted a &quot;Cuzzy&quot; memorabilia "
+"nrgins","@CharlotteSpeaks So
+"jamie_ox","doing another piece of media homework is that all i get now :/ milkshake diet starts today woop woop "
+"xSandraaaaaa","finding out what this is. "
+"andir00","OMG how good is ben and jerrys cookie dough icecream...come one really well goood lol
+"stephyway","oooo haha just waking up and ready to eat a delicious breakfast and prepared to go in the afternoon to watch a movie "
+"IsabellesTravel","#Traveltuesday @GuyNGirlTravels Because their tweets are hilarious LOL and they're great travelers "
+"ChelseaLately_","any ideaZ on what to get dad for father's day ? No socks tho "
+"charitojoy","God works mysteriously!i learn that if u think of the world wonderfully you will receive more &amp; get what u ask for "
+"twisted4ddub","@_CrC_ mornin.. I'm enjoying a beautiful morning here in Phoenix. not too bad out yet "
+"tattoodancer35","Woke up feeling rested and refreshed today! It's about time "
+"Pixgremlin","@naijagal You just HAD to throw that in. Tell her that I say thanks for the eye contact at her Brixton gig. managed to get a shot! "
+"craiglparker","@siovene lol I don't blame you it's not the safest thing in the world "
+"WParenthetical","@ashinynewcoin yeah
+"FrayBaby","@pokapolas love the donut and the toadstool.  "
+"ogreenthumb","@crgrs359 Skip the aquarium and check out these fish   A lot cheaper lol http://bit.ly/2lQbBv"
+"dacyj","@GroleauNET Yeah I'm being an ass today "
+"stephmartinez","@OHTristaN it's sunoudy "
+"heartcures","@kbonded Newsflash: It worked "
+"milliontwits","@stum450n Hi. Thanks for the follow. Nice website... check your carriage returns though
+"lexi234","got home an hour ago ate lunch watched some tv and now i listening to kelly clarkson no exam tomorrow yay!!!!!!!  3 down 4 to go"
+"paligurl93","checking my mail "
+"victoriaquinnxo","done la examen! easy peasy  so proud of myself!!"
+"bobzipp","@davepell you're the undisputed authority on the topic.  goog recognizes!  "
+"adbillingsley","Thanks @eastwestchic &amp; @wangyip Thanks! That was just what I was looking for "
+"gekkko","@marttn thanks Martin. not the most imaginative interface
+"millerslab","@MikeJonesPhoto Congrats Mike  Way to go!"
+"luckygeorgeblog","http://twitpic.com/7jp4n - OMG! Office Space... I wanna steal it. "
+"Kristah_Diggs","@yrclndstnlvr ahaha nooo you were just away from everyone else! i had to see Kara
+"CoachChic","@BizCoachDeb  Hey
+"serianna","@mattycus Yeah
+"TeamUKskyvixen","@MayorDorisWolfe Thats my girl - dishing out the &quot;advice&quot; "
+"LaurenMoo10","@shebbs123 i second that "
+"angel_sammy04","In the garden "
+"puchal_ek","@myheartandmind jo jen by nemuselo zrovna té holce ael co nic "
+"youtubelatest","Another Commenting Contest! [;: Yay!!!  http://tinyurl.com/m6j2an"
+"Mandi_Davenport","@thrillmesoon i figured out how to see my tweets and facebook status updates
+"xoAurixo","@oxhot theri tomorrow
+"RobFoxKerr","You heard it here first -- We're having a girl. Hope it has my looks and Wendy's brains. (Kidding
+"LISKFEST","if ur the lead singer in a band
+"marhgil","@tarayqueen too much ads on my blog. "
+"cathriiin","@La_r_a NEVEER  I think that you both will get on well with each other..."
+"tellman","@Roy_Everitt ha- good job. that's right - we gotta throw that #bigrun tag EVERYWHERE! I wanna get it trending before I start "
+"jazzstixx","@Ms_Hip_Hop im glad ur doing well "
+"razzberry5594","WOOOOO! Xbox is back "
+"AgustinaP","@rmedina @LaTati Mmmm  That sounds absolutely perfect... but my schedule is full. I won't have time to lay in bed until Sunday. Ugh!!"
+"sdancingsteph","ReCoVeRiNg FrOm ThE lOnG wEeKeNd "
+"ChloeAmisha","@SCOOBY_GRITBOYS "
+"EvolveTom","@Cliff_Forster Yeah
+"AmandaMarie1028","Just woke up. Having no school is the best feeling ever "
+"TheWDBoards","TheWDB.com - Very cool to hear old Walt interviews!  ♫ http://blip.fm/~8bmta"
+"bpbabe","Are you ready for your MoJo Makeover? Ask me for details "
+"tinydiamondz","Happy 38th Birthday to my boo of alll time!!! Tupac Amaru Shakur "
+"RyanTrevMorris","happy #charitytuesday @theNSPCC @SparksCharity @SpeakingUpH4H "
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ comm -6 <(tr " " "\n" < REVIEWs[KS/"2193574897".txt | sort) <( tr ","[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[1P" "[C "\n" < tweet.1.csv | sort)
+bash: REVIEWS/2193574897.txt: No such file or directory
+bash: tweet.1.csv: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ comm -6 <(tr " " "\n" < REVIEWS/"2193574897".txt | sort) <(tr " " "\n" < tweet.1.csv | sort)[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccomm -6 <(tr " " "\n" < REVIEWS/"2193574897".txt | sort) <(tr " " "\n" < tweet.1.csv | sort)[A[3Pfor f in REVIEWS/*.txt; do sed "s/a[ ;.,] / /g" $f; done
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ed[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@s[1@/[1@^[1@"[1@/[1@/[1@g[1P[1P[1P[1P[1P[1P[1P[1P[1@/[1@^[1@"[1@/[1@/[1@g[1@"[C[C[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcomm [K -6[K[K-6 <(tr " [K " [K "\n" < REVIEw[KWS/$f  | sort) [K[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; comm -6 <(tr " " "\n" < REVIEWS/$f | sort) [K[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <t[K(tr " " "\n" <[K< $file | sort)
+bash: syntax error near unexpected token `comm'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [K]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < $file | sort)[1P[1P[1P[1P[1P[1@t[1@r[1@a[1@i[37@ning.1600000.processed.noemoticon.csv
+bash: syntax error near unexpected token `comm'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C <(tr " " "\n" < REVIEWS/$f | [1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 <(tr " " "\n" < REVIEWS/$f |[1@ [A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 <(tr " " "\n" < REVIEWS/$f [1@|[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: syntax error near unexpected token `comm'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; comm -12 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C <(tr " " "\n" < REVIEWS/$f |[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C <(tr " " "\n" < REVIEWS/$f | [1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6 <(tr " " "\n" < REVIEWS/$f |[1@ [A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdcomm -6 <(tr " " "\n" < REVIEWS/$f [1@|[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocomm -6 <(tr " " "\n" < REVIEWS/$f[1@ [A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C comm -6 <(tr " " "\n" < REVIEWS/$[1@f[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+> ^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; do comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort); do ne
+bash: REVIEWS/REVIEWS/"2193574897".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193574981".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193574986".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575000".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575004".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193575079".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575126".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575210".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575214".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575236".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575246".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575338".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575376".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575499".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575571".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575729".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575737".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193575745".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575755".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575834".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575839".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575912".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575955".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193575988".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576003".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576004".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576077".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576360".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576380".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576427".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576442".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576469".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576512".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576530".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576534".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576264".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576815".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576655".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576737".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576691".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576573".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576797".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193576854".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193576832".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193577021".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193577228".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193577232".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193577315".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193577328".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+^[[Abash: REVIEWS/REVIEWS/"2193577391".txt: No such file or directory
+bash: REVIEWS/REVIEWS/"2193577154".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+^Cbash: REVIEWS/REVIEWS/"2193577517".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193577586".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+bash: REVIEWS/REVIEWS/"2193577592".txt: No such file or directory
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ 
+
+
+
+
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ 
+
+
+
+
+
+
+
+
+for f in REVIEWS/*.txt; do comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort); done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ 
+
+
+
+
+
+
+
+bash: REVIEWS/REVIEWS/"2193577602".txt: No such file or directory
+
+
+
+
+
+
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ 
+
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ for f in REVIEWS/*.txt; do comm -6 <(tr " " "\n" < REVIEWS/$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort); done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort); done[K[A[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | sort) <(tr " " "\n" < training.1600000.processed.noemoticon.csv | sort); done [K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f |[1P
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | [1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | s[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | so[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | sor[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | sort[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$f | sort)[1P[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C $f | sort[1@)[A]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+comm: invalid option -- '6'
+Try 'comm --help' for more information.
+^C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^C
+^C
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ bash: [: missing `]'
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ bash: [: missing `]'
+bash: wait_for: No record of process 1299359
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ > ]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[00m:[01;34m~/as4[00m$ > ^C^C
+
+]0;ong@f6linux14: ~/as4[01;32mong@f6linux14[
